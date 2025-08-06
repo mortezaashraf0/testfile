@@ -1,0 +1,67 @@
+// let myObject = {
+//   1: { title: "cat" },
+//   2: { title: "dog" },
+//   3: { title: "cow" },
+//   4: { title: "frog" },
+//   5: { title: "sheep" },
+//   6: { title: "bird" },
+//   7: { title: "lion" },
+// };
+// // console.log("djchajdhc");
+
+// for (let i in myObject) {
+//     let item = myObject[i]
+//     console.log(item);
+
+//     if(item.title == "bird" ){
+//         console.log(i);
+        
+//     }
+    
+// }
+
+let myList = [
+  { cityName: "tehran"  },
+  { cityName: "shiraz" },
+  { cityName: "esfahan" },
+  { cityName: "gilan" },
+];
+
+let foodList = [
+  {
+    city: "gilan",
+    food: "mirzaQasemi",
+  },
+  {
+    city: "shiraz",
+    food: "kado polo",
+  },
+  {
+    city: "esfahan",
+    food: "berioni",
+  },
+  {
+    city: "tehran",
+    food: "omlet",
+  },
+  {
+    city: "tabriz",
+    food: "barbary",
+  },
+];
+
+for(let i in foodList){
+    let city1 = foodList[i].city;
+    console.log(city1);
+    // console.log(food1.food);
+    for(let j in myList){
+     let city2 = myList[j].cityName
+     if(city2 == city1){
+        myList[j].foodName = foodList[i].food
+     }
+    }
+    
+}
+console.log(myList);
+
+// add property called foodName to items of myList from foodList and log the result
