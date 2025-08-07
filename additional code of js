@@ -1,0 +1,131 @@
+// function family (firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+// };
+
+// let mymother =new family("Zahra","Eskandar", "40");
+// let myfather =new family("Ali","Ashraf", "50");
+// let mybarather =new family("Mahdi","Ashraf","27")
+
+// console.log("my Broder is " +mybarather.firstName );
+
+
+// const cars= [
+//     "Saab", 
+//     "Volvo", 
+//     "BMW"
+// ]
+// cars.pop();
+// cars.push('toyouta');
+// console.log(cars.join('*'));
+
+// for(let i in cars){
+//     console.log(cars[i]);
+// }
+// console.log(cars[1]);
+
+
+// const cars = new Array('bmw', 'volvo','saab');
+
+// console.log(cars[0]);
+
+// const fruits = ["Banana", "Orange", "Apple"];
+// let type = typeof fruits;
+// console.log(type);
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// for(let i in cars){
+//     console.log(cars[i]);
+// };
+
+// const person = {fname:"John", lname:"Doe", age:25}; 
+
+// for(let i in person){
+//     console.log(person[i]+" ");
+    
+// }
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// let language = "JavaScript";
+
+// let text = "";
+// for (let x of language) {
+//   text += x;
+//   console.log(text);
+//   text = "";
+// };
+
+
+// setInterval(myfunction,1000);
+
+// function myfunction(){
+//   let d = new Date()
+//   console.log(
+//     d.getTime()+":"+
+//     d.getMinutes()+":"+
+//     d.getSeconds()
+//   )
+// }
+
+// function myDisplayer(some){
+//   console.log(some);
+// }
+
+// let mypromise = new Promise(function(myResolve, myReject){
+//   let x = 0;
+
+//   if(x == 0){
+//     myResolve("ok");
+//   }else{
+//     myReject("error");
+//   }
+// })
+
+// mypromise.then(
+//   function (value) { myDisplayer (value);},
+//   function (error) { myDisplayer (error);}
+// );
+
+// let mypromise = new Promise(function(myResolve, myReject){
+//   setTimeout(function() {myResolve('I Love You !!');}, 3000);
+// })
+
+// mypromise.then(function(value){
+//   console.log(value);
+// }
+
+// )
+
+// function desplay(some){
+//   console.log(some);
+// }
+
+// async function myfunction(){
+//   return "Hello";
+// }
+
+// myfunction().then(
+//   function(value){desplay(value);},
+//   function(error){desplay(error);}
+// )
+
+// async function myfunction(){
+//   let mypromise = new Promise(function(resolve,reject){
+//     resolve("I Love You !!");
+//   });
+//   console.log(await mypromise);
+  
+// };
+
+// myfunction();
+
+async function myDisplaye(){
+  let myPromise = new Promise(function(resolve){
+    setTimeout(function(){resolve("I Love You");},3000)
+  });
+  console.log(await myPromise);
+  
+}
+
+myDisplaye();
